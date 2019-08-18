@@ -1,0 +1,61 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: monospace;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-column-gap: 10px;
+    width: 100%;
+    height: 100vh;
+    background: url("cassette.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1 {
+    font-size: 4rem;
+    justify-content: center;
+    text-align: center;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+    grid-column-gap: 5px;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: end;
+}
+
+.key {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-content: center;
+    transition: all 0.07s ease;
+    border: 3px solid black;
+    background-color: rgba(232,216,172,0.25);
+    width: 75px;
+    height: 75px;
+}
+
+.key kbd {
+    font-size: 1.3em;
+    border-bottom: 3px solid black;
+    padding-top: 10px;
+}
+
+.hit {
+    transform: scale(1.2);
+    border: 3px solid orange;
+    background-color: wheat;
+}
